@@ -103,7 +103,7 @@ void construct_cache(void){
     }
 }
 void free_cache(void) {
-    for (int i = 0; i < num_sets; i++) {
+    for (int i = 0; i < E; i++) {
         free(cache[i]);
     }
     free(cache);
